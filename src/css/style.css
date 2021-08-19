@@ -9,3 +9,157 @@ body {
   color: #363333;
   background-color: #d6d6d6;
 }
+
+.chat-widget-container {
+  margin: 40px auto;
+	box-sizing: border-box;
+  padding: 30px;
+  width: 800px;
+	min-height: 250px;
+	border: 1px solid #cccccc;
+	border-radius: 5px;
+  background-color: #ffffff;
+}
+
+.register-form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	box-sizing: border-box;
+	width: 70%;
+	margin: auto;
+	padding: 15px;
+	border: 1px solid #363333;
+	border-radius: 15px;
+}
+
+.form-input, .chat-input {
+  display: inline-block;
+	box-sizing: border-box;
+	font-size: inherit;
+  font-family: inherit;
+  padding: 8px;
+  color: #495057;
+  border: 1px solid #363333;
+  outline: none;
+}
+
+.form-input {
+	width: 70%;
+	margin-top: 20px;
+}
+
+.chat-input {
+	width: 100%;
+	border-radius: 15px;
+}
+
+:invalid {
+  box-shadow: none;
+}
+
+.btn {
+  font-size: inherit;
+  font-family: inherit;
+	width: 40%;
+  padding: 8px;
+	margin-top: 15px;
+  background-color: #ffffff;
+  border: 1px solid #363333;
+  border-radius: 15px;
+}
+
+.error-text {
+	margin-top: 10px;
+	font-size: 12px;
+	color: #5f0a0a;
+}
+
+.chat-widget {
+	box-sizing: border-box;
+	display: flex;
+	align-items: flex-start;
+	margin-top: 30px;
+}
+
+.chat-users {
+	box-sizing: border-box;
+	width: 25%;
+	min-height: 150px;
+	max-height: 350px;
+	margin-top: 15px;
+	padding: 15px;
+	border: 1px solid #363333;
+	border-top-left-radius: 15px;
+	border-bottom-left-radius: 15px;
+	border-right: none;
+	overflow: auto;
+}
+
+.chat-user-list {
+	list-style-type: none;
+}
+
+.user {
+	padding: 5px 5px;
+}
+
+.user::before {
+	content: "\25EF";
+	margin-right: 15px;
+	font-size: 30px;
+	vertical-align: -4px;
+	opacity: 70%;
+}
+
+.own {
+	color: rgb(255, 102, 56);
+}
+
+.chat-content {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+
+	box-sizing: border-box;
+	width: 75%;
+	min-height: 250px;
+	max-height: 500px;
+	padding: 15px;
+	border: 1px solid #363333;
+	border-radius: 15px;
+}
+
+.messages {
+	display: flex;
+	flex-direction: column;
+	box-sizing: border-box;
+	margin-bottom: 20px;
+	overflow: auto;
+}
+
+.message {
+	margin-bottom: 5px;
+	padding: 10px;
+}
+
+.own-mes {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	align-self: flex-end;
+	margin-right: 15px;
+}
+
+.own-mes .message-text {
+	text-align: end;
+}
+
+.message-header {
+	font-size: 12px;
+	color: #5c5c5c;
+}
+
+.chat-form {
+	width: 100%;
+}
